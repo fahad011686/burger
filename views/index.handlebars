@@ -1,0 +1,14 @@
+<h1>HandleBarger</h1>
+
+<h3>Order from our delicious menu:</h3>
+
+<ul>
+  {{#each food}}
+  	<li>
+  	
+      <p><span class="label"></span>{{this.id}}. {{this.burger_name}}</p>
+
+      <button data-id="{{this.id}}" class="eat">Order Now</button>
+  	</li>
+  {{/each}}
+</ul>
